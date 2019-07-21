@@ -40,6 +40,26 @@ button{
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <input type = "button" value = "Show image for 5 seconds"><br><br>
+    <div id = "myDiv" style="display:none"><img id = "myImage" src = "staa2.png"></div><br>
+    <script type="text/javascript">
+
+  (function(){
+    var myDiv = document.getElementById("myDiv"),
+
+      show = function(){
+        myDiv.style.display = "block";
+        setTimeout(hide, 5000); // 5 seconds
+      },
+
+      hide = function(){
+        myDiv.style.display = "none";
+      };
+
+    show();
+  })();
+
+</script>
     <div class="center">
     <h1> SnailDOS MESSAGE BACKUP BOT </h1>
     <h2>       Welcome!              </h1>

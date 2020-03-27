@@ -167,14 +167,22 @@
 
 	
     <div id="overviews" class="section lb">
-	    <script>
-		     $(document).ready(function() { 
-	    $("#sticky").modal({
-  escapeClose: false,
-  clickClose: false,
-  showClose: false
-});
-	    </script>
+<script type="text/javascript">
+    $(window).on('load',function(){
+        $('#myModal').modal('show');
+    });
+</script>
+	    
+	    <div class="modal hide fade" id="myModal">
+  <div class="modal-header">
+    <h3>This website is shutdown</h3>
+  </div>
+  <div class="modal-body">
+    <p>SnailDOS has moved to: 		<a href="http://snaildos.tk">SnailDOS.tk (click here)</a></p>
+  </div>
+  <div class="modal-footer">
+  </div>
+</div>
 
         <div class="container">
             <div class="section-title row text-center">

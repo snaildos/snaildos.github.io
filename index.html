@@ -17,6 +17,12 @@
     <!-- Site Icons -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
 
     <!-- Bootstrap CSS -->
@@ -161,6 +167,15 @@
 
 	
     <div id="overviews" class="section lb">
+	    <script>
+		     $(document).ready(function() { 
+	    $("#sticky").modal({
+  escapeClose: false,
+  clickClose: false,
+  showClose: false
+});
+	    </script>
+
         <div class="container">
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
@@ -204,13 +219,9 @@
                    
                 </div>
             </div><!-- end title -->
-			<div class="timeline">
-				<div class="timeline__wrap">
-						<div class="timeline__item">
-							<div class="timeline__content img-bg-01">
-								<h2>2019</h2>
-								<p>SnailDOS has been running 'till this day with tons of new updates.</p>
-							</div>
+			<div class="sticky">
+				<h1> This website has shutdown! We have moved to our own domain now :D </h1>
+							<a href="https://snaildos.tk">Click here to goto the new website!</a>
 						</div>
 			
 						</div>
